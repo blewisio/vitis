@@ -1,6 +1,6 @@
-# Vitis
+# vitis
 
-Static analysis at the repository level via plugins.
+Static analysis across multiple repositories via plugins.
 
 ## Usage
 

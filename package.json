@@ -1,7 +1,7 @@
 {
   "name": "vitis",
   "version": "1.0.0",
-  "description": "Static analysis at the repository level via plugins",
+  "description": "Static analysis across multiple repositories via plugins",
   "bin": {
     "vitis": "index.js"
   },
@@ -15,7 +15,9 @@
   "keywords": [
     "static",
     "analysis",
-    "repositories"
+    "repositories",
+    "serverless",
+    "microservices"
   ],
   "author": "",
   "license": "ISC",

@@ -40,10 +40,11 @@ Plugins will be called on each repository, and will receive an object with the f
 * `serverless` - the contents of `serverless.yml` (in JS object form), if it exists
 
 Example:
-```
+```js
 module.exports = ({ dir, package, serverless }) => {
   // do something with the directory name, the package.json file,
   // or the serverless.yml contents.
+  return 'hi';
 };
 ```
 

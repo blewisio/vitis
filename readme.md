@@ -1,3 +1,5 @@
+![logo](./vitis.png)
+
 # vitis
 
 Static analysis across multiple repositories via plugins.

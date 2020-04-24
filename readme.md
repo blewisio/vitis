@@ -1,4 +1,4 @@
-![logo](./vitis.png)
+![logo](./logo.png)
 
 # vitis
 

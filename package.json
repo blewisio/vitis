@@ -1,6 +1,6 @@
 {
   "name": "vitis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Static analysis across multiple repositories via plugins",
   "bin": {
     "vitis": "index.js"

@@ -106,22 +106,36 @@ const DEFAULT_REPOS_FOLDER = 'repos';
     const compactTableOptions = compact
       ? {
         chars: {
-          'top': '', 'top-mid': '', 'top-left': '', 'top-right': ''
-          , 'bottom': '', 'bottom-mid': '', 'bottom-left': '', 'bottom-right': ''
-          , 'left': '', 'left-mid': '', 'mid': '', 'mid-mid': ''
-          , 'right': '', 'right-mid': '', 'middle': '  '
+          /* eslint-disable quote-props */
+          'top': '',
+          'top-mid': '',
+          'top-left': '',
+          'top-right': '',
+          'bottom': '',
+          'bottom-mid': '',
+          'bottom-left': '',
+          'bottom-right': '',
+          'left': '',
+          'left-mid': '',
+          'mid': '',
+          'mid-mid': '',
+          'right': '',
+          'right-mid': '',
+          'middle': '  ',
+          /* eslint-enable quote-props */
         },
-        style: { 'padding-left': 0, 'padding-right': 0 }
+        style: {
+          'padding-left': 0,
+          'padding-right': 0,
+        },
       }
       : {};
     const table = new Table({
       head: ['directory', ...plugins.map(x => x.name)],
-      ...compactTableOptions
+      ...compactTableOptions,
     });
 
-    const rows = Object.entries(results).map(([key, values]) => {
-      return [key, ...Object.values(values)];
-    });
+    const rows = Object.entries(results).map(([key, values]) => [key, ...Object.values(values)]);
 
     table.push(...rows);
     console.log(table.toString());

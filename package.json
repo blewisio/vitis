@@ -7,8 +7,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "example": "node index --package-name --serverless-name --sls-node-version",
-    "lint": "eslint *.js",
+    "example": "node index --package-name",
+    "lint": "eslint . --report-unused-disable-directives",
     "start": "node index",
     "test": "jest"
   },
@@ -22,11 +22,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "camelcase": "^6.0.0",
-    "chalk": "^4.0.0",
-    "cli-table3": "^0.6.0",
-    "fs-extra": "^9.0.0",
-    "js-yaml": "^3.13.1",
+    "camelcase": "^6.3.0",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.3",
+    "fs-extra": "^9.1.0",
+    "js-yaml": "^3.14.1",
     "klaw": "^3.0.0",
     "klaw-sync": "^6.0.0",
     "upath": "^1.2.0",
@@ -34,8 +34,8 @@
   },
   "devDependencies": {
     "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2",
-    "jest": "^25.4.0"
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.28.1",
+    "jest": "^25.5.4"
   }
 }
